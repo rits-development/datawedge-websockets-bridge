@@ -12,8 +12,8 @@ pool:
 steps:
 - task: Gradle@2
   inputs:
-    workingDirectory: '$(system.defaultWorkingDirectory)/DataWedge-WebSockets-Bridge'
-    gradleWrapperFile: 'gradlew'
+    workingDirectory: ''
+    gradleWrapperFile: '$(system.defaultWorkingDirectory)/DataWedge-WebSockets-Bridge/gradlew'
     gradleOptions: '-Xmx3072m'
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
